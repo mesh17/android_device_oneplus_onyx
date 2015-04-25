@@ -20,8 +20,6 @@ LOCAL_PATH := device/moto/victara
 
 BOARD_VENDOR := motorola-qcom
 
-TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
-
 # Platform
 TARGET_BOARD_PLATFORM := msm8974
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
@@ -43,10 +41,7 @@ TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom msm_rtb.filter=0x37 ehci-hcd.park=3 vmalloc=400M utags.blkdev=/dev/block/platform/msm_sdcc.1/by-name/utags androidboot.bootdevice=msm_sdcc.1
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
-TARGET_KERNEL_SOURCE := kernel/motorola/msm8974
-TARGET_KERNEL_CONFIG := cyanogenmod_victara_defconfig
 
 # Audio
 AUDIO_FEATURE_ENABLED_ANC_HEADSET := true
@@ -93,9 +88,6 @@ TARGET_NR_SVC_SUPP_GIDS := 32
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
-# Motorola
-TARGET_USES_MOTOROLA_LOG := true
-
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -107,8 +99,6 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 10970071040
 # Power HAL
 TARGET_POWERHAL_VARIANT := qcom
 TARGET_POWERHAL_SET_INTERACTIVE_EXT := device/moto/victara/power/power_ext.c
-
-# Qualcomm support
 
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
