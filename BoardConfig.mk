@@ -102,6 +102,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_POWERHAL_VARIANT := qcom
 TARGET_POWERHAL_SET_INTERACTIVE_EXT := device/moto/victara/power/power_ext.c
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
+
 # SELinux
 BOARD_SEPOLICY_DIRS += device/moto/victara/sepolicy
 
