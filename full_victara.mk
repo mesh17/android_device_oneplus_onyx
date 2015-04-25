@@ -14,8 +14,11 @@
 # limitations under the License.
 #
 
+# Get the long list of APNs
+PRODUCT_COPY_FILES := device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
+
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from victara device
 $(call inherit-product, device/moto/victara/device.mk)
@@ -23,6 +26,6 @@ $(call inherit-product, device/moto/victara/device.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := victara
 PRODUCT_NAME := full_victara
-PRODUCT_BRAND := motorola
-PRODUCT_MODEL := victara
-PRODUCT_MANUFACTURER := motorola
+PRODUCT_BRAND := Android
+PRODUCT_MODEL := Moto X 2014
+PRODUCT_MANUFACTURER := Motorola
