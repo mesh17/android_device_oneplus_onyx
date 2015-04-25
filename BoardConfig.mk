@@ -103,7 +103,6 @@ TARGET_POWERHAL_VARIANT := qcom
 TARGET_POWERHAL_SET_INTERACTIVE_EXT := device/moto/victara/power/power_ext.c
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += device/moto/victara/sepolicy
 
 BOARD_SEPOLICY_UNION += \
