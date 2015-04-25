@@ -16,14 +16,11 @@
 # inherit from the proprietary version
 -include vendor/motorola/victara/BoardConfigVendor.mk
 
-LOCAL_PATH := device/motorola/victara
+LOCAL_PATH := device/moto/victara
 
 BOARD_VENDOR := motorola-qcom
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
-
-# Assert
-TARGET_OTA_ASSERT_DEVICE := victara
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8974
@@ -43,7 +40,6 @@ TARGET_CPU_VARIANT := krait
 TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
 # Kernel
-BOARD_CUSTOM_BOOTIMG_MK := device/motorola/victara/mkbootimg.mk
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom msm_rtb.filter=0x37 ehci-hcd.park=3 vmalloc=400M utags.blkdev=/dev/block/platform/msm_sdcc.1/by-name/utags androidboot.bootdevice=msm_sdcc.1
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -110,7 +106,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 10970071040
 
 # Power HAL
 TARGET_POWERHAL_VARIANT := qcom
-TARGET_POWERHAL_SET_INTERACTIVE_EXT := device/motorola/victara/power/power_ext.c
+TARGET_POWERHAL_SET_INTERACTIVE_EXT := device/moto/victara/power/power_ext.c
 
 # Qualcomm support
 
@@ -126,7 +122,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += device/motorola/victara/sepolicy
+BOARD_SEPOLICY_DIRS += device/moto/victara/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     adspd.te \

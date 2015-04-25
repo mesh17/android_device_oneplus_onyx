@@ -18,7 +18,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from victara device
-$(call inherit-product, device/motorola/victara/device.mk)
+$(call inherit-product, device/moto/victara/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := victara
