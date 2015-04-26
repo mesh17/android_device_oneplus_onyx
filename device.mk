@@ -179,7 +179,7 @@ PRODUCT_BOOT_JARS += \
 
 # Power HAL
 PRODUCT_PACKAGES += \
-    power.msm8974
+    power.qcom
 
 # Ramdisk
 PRODUCT_PACKAGES += \
