@@ -14,5 +14,5 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_victara.mk \
-    $(LOCAL_DIR)/full_victara.mk
+    $(LOCAL_DIR)/aosp_onyx.mk \
+    $(LOCAL_DIR)/full_onyx.mk

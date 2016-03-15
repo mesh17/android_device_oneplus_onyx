@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DEVICE=victara
-VENDOR=motorola
+DEVICE=onyx
+VENDOR=oneplus
 
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
@@ -110,7 +110,7 @@ EOF
 
 LOCAL_PATH := \$(call my-dir)
 
-ifeq (\$(TARGET_DEVICE),victara)
+ifeq (\$(TARGET_DEVICE),onyx)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := com.qualcomm.location

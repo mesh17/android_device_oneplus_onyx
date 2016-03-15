@@ -20,12 +20,12 @@ PRODUCT_COPY_FILES := device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit from victara device
-$(call inherit-product, device/moto/victara/device.mk)
+# Inherit from onyx device
+$(call inherit-product, device/oneplus/onyx/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := victara
-PRODUCT_NAME := full_victara
+PRODUCT_DEVICE := onyx
+PRODUCT_NAME := full_onyx
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := Moto X 2014
-PRODUCT_MANUFACTURER := Motorola
+PRODUCT_MODEL := oneplus X
+PRODUCT_MANUFACTURER := oneplus

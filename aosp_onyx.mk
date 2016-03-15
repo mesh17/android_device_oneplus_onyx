@@ -13,9 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-$(call inherit-product, device/moto/victara/full_victara.mk)
+$(call inherit-product, device/oneplus/onyx/full_onyx.mk)
 
-PRODUCT_NAME := aosp_victara
+PRODUCT_NAME := aosp_onyx
 
 PRODUCT_PACKAGES += \
     Launcher3

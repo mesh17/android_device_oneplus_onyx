@@ -16,7 +16,7 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-$(call inherit-product, vendor/motorola/victara/victara-vendor.mk)
+$(call inherit-product, vendor/oneplus/onyx/onyx-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -145,7 +145,7 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
 
-# Motorola
+# oneplus
 PRODUCT_PACKAGES += \
     charge_only_mode
 
@@ -159,8 +159,8 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras
 
 PRODUCT_COPY_FILES += \
-    device/moto/victara/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    device/moto/victara/nfc/libnfc-brcm-20795a10.conf:system/etc/libnfc-brcm-20795a10.conf
+    device/oneplus/onyx/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/oneplus/onyx/nfc/libnfc-brcm-20795a10.conf:system/etc/libnfc-brcm-20795a10.conf
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -188,7 +188,7 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.qcom.bt.sh \
-    moto_com.sh
+    oneplus_com.sh
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -212,7 +212,7 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine-victara.conf:system/etc/thermal-engine-victara.conf
+    $(LOCAL_PATH)/configs/thermal-engine-onyx.conf:system/etc/thermal-engine-onyx.conf
 
 # USB
 PRODUCT_PACKAGES += \

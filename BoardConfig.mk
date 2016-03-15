@@ -14,11 +14,11 @@
 # limitations under the License.
 
 # inherit from the proprietary version
--include vendor/motorola/victara/BoardConfigVendor.mk
+-include vendor/oneplus/onyx/BoardConfigVendor.mk
 
-LOCAL_PATH := device/moto/victara
+LOCAL_PATH := device/oneplus/onyx
 
-BOARD_VENDOR := motorola-qcom
+BOARD_VENDOR := oneplus-qcom
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8974
@@ -94,7 +94,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
 
 # SELinux
-BOARD_SEPOLICY_DIRS += device/moto/victara/sepolicy
+BOARD_SEPOLICY_DIRS += device/oneplus/onyx/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     adspd.te \

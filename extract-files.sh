@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #set -e
-export DEVICE=victara
-export VENDOR=motorola
+export DEVICE=onyx
+export VENDOR=oneplus
 
 if [ $# -eq 0 ]; then
   SRC=adb

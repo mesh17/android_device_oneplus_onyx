@@ -15,7 +15,7 @@
 #
 
 BOARD_KERNEL_SEPARATED_DT := true
-KERNEL_DEFCONFIG := cyanogenmod_victara_defconfig
+KERNEL_DEFCONFIG := cyanogenmod_onyx_defconfig
 KERNEL_DIR := kernel
 
 -include $(TOP)/$(KERNEL_DIR)/AndroidKernel.mk
